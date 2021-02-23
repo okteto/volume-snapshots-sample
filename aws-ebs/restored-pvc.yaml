@@ -4,7 +4,7 @@ apiVersion: v1
 metadata:
   name: restored-pvc
   annotations:
-    dev.okteto.com/from-snapshot-id: "projects/development-300207/global/snapshots/snapshot-8dc4bb4c-276e-4b03-af17-1c83e07a6801"
+    dev.okteto.com/from-snapshot-id: "snap-09268276be35c338a"
 spec:
   accessModes:
     - ReadWriteOnce
