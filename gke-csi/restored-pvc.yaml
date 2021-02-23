@@ -1,0 +1,14 @@
+# restored-pvc.yaml
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: restored-pvc
+  annotations:
+    dev.okteto.com/from-snapshot-id: "projects/development-300207/global/snapshots/snapshot-8dc4bb4c-276e-4b03-af17-1c83e07a6801"
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: okteto-snapshot-sc
+  resources:
+    requests:
+      storage: 1Gi
